@@ -1,30 +1,64 @@
 .App {
   min-height: 100vh;
-  background-image: linear-gradient(120deg, #f7bb63fd 0%, #d8919b 100%);
+  background-image: linear-gradient(120deg, #a9a9f3fd 0%, #5660c7 100%);
 }
 
 .search-form {
-  min-height: 10vh;
-  display: flex;
+  min-height: 90vh;
+  width: 90%;
+  font-size: 1.8rem;
+  display: flexbox;
   justify-content: center;
   align-items: center;
 }
 
+
 .serach-bar {
-  width: 50%;
-  border: #aa4f16fd;
-  padding: 10px;
+  width: 80%;
+  height: 40vh;
+  border: #aa1616fd;
+  padding: 20px;
+  align-self: center;
+  justify-content: space-around;
 }
 
 .search-button {
-  background: lightcoral;
+  background: rgb(233, 205, 205);
   border: none;
-  padding: 10px 20px;
+  padding: 20px 40px;
   color: white;
 }
 
 .recipes {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+#webCifar {
+  --color-1: #456ae4;
+  --color-2: #24252a;
+  --color-3: #462374;
+  --color-4: #f3f8f7;
+  background: var(--color-2);
+  display: inline-block;
+  color: var(--color-4);
+  padding: 10px 17px;
+  border-radius: 6px;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  -webkit-transform: translateX(calc(100% + 5px));
+  transform: translateX(calc(100% + 5px));
+  -webkit-transition: 0.5s ease-out transform;
+  transition: 0.5s ease-out transform;
+  z-index: 4;
+}
+
+#webCifar.active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
